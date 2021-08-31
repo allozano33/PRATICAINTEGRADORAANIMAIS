@@ -1,18 +1,30 @@
 package com.company;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
 
         Cachorro cachorro = new Cachorro("Au Au");
-	    cachorro.emitirSom();
+        cachorro.emitirSom();
+        cachorro.comerMeat();
+        cachorro.comerAnimal();
 
-	    Gato gato = new Gato("Au Au");
+        System.out.println("-------------------------------------------");
+
+        Gato gato = new Gato("Miau");
         gato.emitirSom();
+        gato.comerMeat();
+        gato.comerAnimal();
 
-        Vaca vaca = new Vaca("Mu Mu");
+        System.out.println("-------------------------------------------");
+
+        Vaca vaca =  new Vaca("MUUU");
         vaca.emitirSom();
-
+        vaca.comerHerb();
+        vaca.comerAnimal();
 
     }
+
 }
